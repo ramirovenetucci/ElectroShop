@@ -1,0 +1,457 @@
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+
+}
+
+.grid-conteiner {
+    display: grid;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* ---- HEADER ----*/
+header{
+    width: 100%;
+    background-color:rgb(255, 255, 255); 
+    position: sticky;
+    margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.d.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscador{
+    
+    width: 200px;
+    height: 50%;
+}
+
+.btn {
+    width: 100%;
+    height: 50%;
+    border: 1.5px solid black;
+    background-color: white;
+
+}
+
+/* ---- MAIN ----*/
+main{
+    background-color: beige;
+    width: 100%;
+    height: 100%;
+}
+
+.carrusel div img{
+    width: 100%;
+    height: 500px ;
+}
+
+
+.introduccion{
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/familia.webp");
+}
+
+.tituloprimario{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    border: 1px solid black;
+
+}
+
+.titulosecundario{
+    color: black;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+.contenedor-menu ul{
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}  
+
+
+.contenedor-menu ul li {
+    display: inline-block;
+    margin: 5px;
+    font-size: 20px;
+    border: 1px solid black;
+    transition-duration: 2s;
+    transition-property: width;
+    transition-delay: 2s;
+    border-radius: 15%;
+}
+
+.contenedor-menu ul li:hover{ 
+    background-color: rgb(0, 180, 252);
+    transform: scale(1.5);
+
+}
+
+/* 
+HOVER PARA LOS ENLACES DEL MENU */
+/* .contenedor-menu ul li:hover {
+    background-color: red;
+} */
+
+.segunda h2{
+    font-size: 55px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid black;
+}
+
+/* PREGUNTAR A JONNY SOBRE BOX SHADOW*/
+
+.mas-vendidosCards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mas-vendidosCards img{
+    width: 200px;
+    height: 200px;
+}
+
+
+.segunda .mas-vendidosCards div{
+    border: 1px solid gray;
+    width: 300px; 
+    height: 350px;
+    margin: 5px;
+    text-align:center;
+    display: inline-block;
+    box-shadow: 10px 13px 17px -10px rgba(0,0,0,1);
+-webkit-box-shadow: 10px 13px 17px -10px rgba(0,0,0,1);
+-moz-box-shadow: 10px 13px 17px -10px rgba(0,0,0,1);
+    transition: 2s;
+}
+
+.segunda .mas-vendidosCards div:hover{ 
+    transform: scale(1.1);
+
+}
+
+.mas-vendidosCards div a{
+    border: 1px solid grey;
+    text-align: center;
+}
+
+.tercera-ofertas h2{
+    text-align: center;
+    font-size: 55px;
+    border: solid black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.tercera-ofertas img{
+    width: 200px;
+    height: 200px;
+}
+
+.tercera-ofertas div{
+    display: flex;
+    justify-content: space-between;
+    align-items:unset;
+    flex-wrap: wrap;
+}
+
+.ofertas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ofertas div{
+    border: 1px solid gray;
+    width: 350px; 
+    height: 275px;
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 10px 13px 17px -10px rgba(0,0,0,1);
+-webkit-box-shadow: 10px 13px 17px -10px rgba(0,0,0,1);
+-moz-box-shadow: 10px 13px 17px -10px rgba(0,0,0,1);
+    transition: 2s;
+}
+
+.ofertas div:hover{
+    transform: scale(1.1);
+}
+
+.tercera-ofertas div a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.cuarta div h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.cuarta div iframe{
+    width: 250px;
+    height: 250px;
+}
+
+
+/* ---- FOOTER ----*/
+
+footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+footer div img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/* segunda pagina*/
+
+
+.celulares-primera h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.motorola{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.motorola img{
+    width: 200px;
+    height: 200px;
+}
+
+.motorola div{
+    border: 1px solid gray;
+    width: 200px; 
+    height: 350px;
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 10px 13px 17px -10px rgba(0,0,0,1);
+-webkit-box-shadow: 10px 13px 17px -10px rgba(0,0,0,1);
+-moz-box-shadow: 10px 13px 17px -10px rgba(0,0,0,1);
+    transition: 2s;
+}
+
+.motorola div:hover{
+    transform: scale(1.1);
+}
+
+.motorola div a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+}
+
+.celulares-segunda h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.samsung{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.samsung img{
+    width: 200px;
+    height: 200px;
+}
+
+.samsung div{
+    border: 1px solid gray;
+    width: 200px; 
+    height: 350px;
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 10px 13px 17px -10px rgba(0,0,0,1);
+-webkit-box-shadow: 10px 13px 17px -10px rgba(0,0,0,1);
+-moz-box-shadow: 10px 13px 17px -10px rgba(0,0,0,1);
+    transition: 2s;
+}
+
+.samsung div:hover{
+    transform: scale(1.1);
+}
+
+.samsung div a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+}
+
+.piecelulares{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+/*---GRID---*/
+
+.grid-contenedor{
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: 250px 50px 800px 900px 1098px 1098px 300px 250px;
+    grid-template-areas: 
+    "header header header"
+    "contenedor-menu contenedor-menu contenedor-menu"
+    "introduccion introduccion introduccion"
+    "carrusel carrusel carrusel"
+    "seugnda segunda segunda"
+    "tercera-ofertas tercera-ofertas tercera-ofertas"
+    "cuarta cuarta cuarta"
+    "footer footer footer"
+    ;
+    
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+}
+
+.contenedor-menu{
+    grid-area: contenedor-menu;
+}
+
+.introduccion{
+    grid-area: introduccion;
+}   
+
+.carrusel{
+    grid-area: carrusel;
+}
+
+.segunda{
+    grid-area: segunda;
+}
+
+.tercera-ofertas{
+    grid-area: tercera-ofertas;
+}
+
+.cuarta{
+    grid-area: cuarta;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+/* MEJOR EXPLICACION DEL USO DE MEDIAQERY*/
+
+@media screem and (max-width:768px) {
+    .grid-conteiner{
+        width: 100%;
+        margin: 0;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 250px 50px 800px 900px 1098px 1098px 300px 250px;
+        grid-template-areas: 
+        "header header"
+        "contenedor-menu contenedor-menu"
+        "introduccion introduccion"
+        "carrusel carrusel"
+        "seugnda segunda"
+        "tercera-ofertas tercera-ofertas"
+        "cuarta cuarta"
+        "footer footer"
+        ;
+    }
+}
+
+@media screem and (max-width:360px) {
+    .grid-conteiner{
+        width: 100%;
+        margin: 0;
+        grid-template-columns:1fr;
+        grid-template-rows: 250px 50px 800px 900px 1098px 1098px 300px 250px;
+        grid-template-areas: 
+        "header"
+        "contenedor-menu"
+        "introduccion"
+        "carrusel"
+        "seugnda"
+        "tercera-ofertas"
+        "cuarta"
+        "footer"
+        ;
+    }
+
+    footer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-between;
+    }
+
+    footer div img {
+        width: 8px;
+        height: 8px;
+    }
+}
