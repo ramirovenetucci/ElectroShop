@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* PLACEHOLDER */
+header {
+  width: 100%;
+  background-color: white;
+  position: sticky;
+  margin: 10px;
+  display: flex;
+  justify-content: space-evenly; }
